@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,x,y;
+    scanf("%d%d%d",&n,&x,&y);
+    int lb =(x*n)/100;
+    printf("%d\n",lb);
+    int bb=(y)*(n-lb)/(100);
+    printf("%d\n",bb);
+    int tp=(n-(lb+bb))/3;
+    printf("%d\n",tp);
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
